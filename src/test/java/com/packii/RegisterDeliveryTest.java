@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 public class RegisterDeliveryTest {
 
     RegisterDelivery registerDelivery = new RegisterDelivery();
+    FindDelivery findDelivery = new FindDelivery();
 
     @Test
     @DisplayName("택배를 등록한다.")
