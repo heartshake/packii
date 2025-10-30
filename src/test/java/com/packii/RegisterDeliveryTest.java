@@ -1,5 +1,6 @@
 package com.packii;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -19,5 +20,8 @@ public class RegisterDeliveryTest {
 
         // 택배를 저장한다.
         registerDelivery.register(delivery);
+        // 택배가 저장되었다는 것을 검증해야 함.
+        Delivery foundDelivery = findDelivery.findBy(studentName, deliveryCompany);
+        Assertions.assertNotNull(foundDelivery);
     }
 }
