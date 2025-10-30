@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 
 public class RegisterPackageTest {
 
+    RegisterPackage registerPackage = new RegisterPackage();
+
     @Test
     @DisplayName("택배를 등록한다.")
     void register_package() {
