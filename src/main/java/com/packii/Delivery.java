@@ -8,4 +8,11 @@ class Delivery {
         this.studentName = studentName;
         this.deliveryCompany = deliveryCompany;
     }
+
+    public String getStudentName() {
+        return studentName;
+    }
+    public String getDeliveryCompany() {
+        return deliveryCompany;
+    }
 }
